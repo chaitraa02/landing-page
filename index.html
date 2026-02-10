@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bag Collection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f8f8f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-weight: 600;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #fff;
+      background: #000;
+      padding: 10px 18px;
+      border-radius: 25px;
+      font-size: 14px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 80px 60px;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .hero button {
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 14px 30px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .section {
+      padding: 80px 60px;
+    }
+
+    .section h3 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .card h4 {
+      margin-bottom: 5px;
+    }
+
+    .card span {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .benefit {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    .newsletter {
+      background: #000;
+      color: #fff;
+      padding: 60px;
+      text-align: center;
+      border-radius: 30px;
+      margin: 60px;
+    }
+
+    .newsletter input {
+      padding: 12px 20px;
+      width: 260px;
+      border-radius: 25px;
+      border: none;
+      margin-right: 10px;
+      outline: none;
+    }
+
+    .newsletter button {
+      padding: 12px 25px;
+      border-radius: 25px;
+      border: none;
+      background: #fff;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Bagify</h1>
+  <a href="#">Shop Now</a>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Premium Bags for Every Journey</h2>
+    <p>Designed with elegance, built for everyday use. Discover our latest bag collection.</p>
+    <button>Explore Collection</button>
+  </div>
+  <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80" alt="Bag Collection">
+</section>
+
+<section class="section">
+  <h3>Our Collection</h3>
+  <div class="products">
+
+    <!-- Leather Tote -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=600&q=80" alt="Leather Tote Bag">
+      <h4>Leather Tote</h4>
+      <span>$120</span>
+    </div>
+
+    <!-- Classic Backpack -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80" alt="Classic Backpack">
+      <h4>Classic Backpack</h4>
+      <span>$95</span>
+    </div>
+
+    <!-- Mini Crossbody -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=600&q=80" alt="Mini Crossbody Bag">
+
+      <h4>Mini Crossbody</h4>
+      <span>$75</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h3>Why Choose Us</h3>
+  <div class="benefits">
+    <div class="benefit">✔ Premium Materials</div>
+    <div class="benefit">✔ Minimal Design</div>
+    <div class="benefit">✔ Durable & Lightweight</div>
+    <div class="benefit">✔ Sustainable Packaging</div>
+  </div>
+</section>
+
+<div class="newsletter">
+  <h3>Join Our Newsletter</h3>
+  <p>Get exclusive offers and early access to new collections.</p><br>
+  <input type="email" placeholder="Enter your email">
+  <button>Subscribe</button>
+</div>
+
+<footer>
+  © 2026 Bagify. All rights reserved.
+</footer>
+
+</body>
+</html>
+
